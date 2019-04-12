@@ -1,0 +1,8 @@
+<div class="artists">
+  {{!-- iterate through the array to display what you want --}}
+  {{#each data.body.artists.items}}
+  {{this.name}}
+  <img src={{this.images.[0].url}} alt="" class="card-img-top">
+  <button><a href="/albums/{{this.id}}">View Albums</a></button>
+  {{/each}}
+</div>
